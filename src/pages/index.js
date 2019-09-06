@@ -49,7 +49,7 @@ export const pageQuery = graphql`
         node {
           title
           slug
-            ContentTypeLocation
+            Location
           publishDate(formatString: "MMMM Do, YYYY")
           tags
           heroImage {
