@@ -16,14 +16,12 @@ export default ({ article }) => (
         __html: article.description.childMarkdownRemark.html,
       }}
     />
-<p
-      dangerouslySetInnerHTML={{
-        __html: article.location.childMarkdownRemark.html,
-      }}
-    />
-    {article.tags.map(tag => (
-      <p className={styles.tag} key={tag}>
-        {tag}
+{article.location.map(location => (
+      <p className={styles.tag} key={location}>
+        {location}
+    {article.location.map(location => (
+      <p className={styles.tag} key={location}>
+        {location}
       </p>
     ))}
   </div>
