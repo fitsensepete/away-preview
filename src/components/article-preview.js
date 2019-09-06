@@ -16,6 +16,11 @@ export default ({ article }) => (
         __html: article.description.childMarkdownRemark.html,
       }}
     />
+<p
+      dangerouslySetInnerHTML={{
+        __html: article.location.childMarkdownRemark.html,
+      }}
+    />
     {article.tags.map(tag => (
       <p className={styles.tag} key={tag}>
         {tag}
