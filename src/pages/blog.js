@@ -50,6 +50,7 @@ export const pageQuery = graphql`
         node {
           title
           slug
+          author
           publishDate(formatString: "MMMM Do, YYYY")
           tags
           heroImage {
