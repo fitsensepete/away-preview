@@ -21,7 +21,7 @@ class BlogPostTemplate extends React.Component {
           </div>
           <div className="wrapper">
             <h1 className="section-headline">{post.title}</h1>
-            <h1>{post.author}</h1>
+            
             <p
               style={{
                 display: 'block',
@@ -29,6 +29,7 @@ class BlogPostTemplate extends React.Component {
             >
               {post.publishDate}
             </p>
+<h1>{post.author}</h1>
             <div
               dangerouslySetInnerHTML={{
                 __html: post.body.childMarkdownRemark.html,
