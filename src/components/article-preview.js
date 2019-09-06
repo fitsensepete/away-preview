@@ -21,10 +21,5 @@ export default ({ article }) => (
         {tag}
       </p>
     ))}
-{article.location.map(location => (
-      <p className={styles.tag} key={location}>
-        {location}
-      </p>
-    ))}
   </div>
 )
