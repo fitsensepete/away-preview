@@ -268,7 +268,16 @@
                     "validations": [],
                     "disabled": false,
                     "omitted": false
-                },
+                },{
+      "id": "location",
+      "name": "Location",
+      "type": "Location",
+      "localized": false,
+      "required": true,
+      "validations": [],
+      "disabled": false,
+      "omitted": false
+    }
                 {
                     "id": "tags",
                     "name": "Tags",
