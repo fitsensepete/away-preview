@@ -51,13 +51,17 @@ export const pageQuery = graphql`
           slug
           publishDate(formatString: "MMMM Do, YYYY")
           tags
-          location
           heroImage {
             fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
              ...GatsbyContentfulFluid_tracedSVG
             }
           }
           description {
+            childMarkdownRemark {
+              html
+            }
+          }
+location {
             childMarkdownRemark {
               html
             }
