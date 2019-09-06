@@ -62,6 +62,11 @@ export const pageQuery = graphql`
               html
             }
           }
+location {
+            childMarkdownRemark {
+              html
+            }
+          }
 
         }
       }
