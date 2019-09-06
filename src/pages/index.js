@@ -48,6 +48,7 @@ export const pageQuery = graphql`
       edges {
         node {
           title
+          location
           slug
           publishDate(formatString: "MMMM Do, YYYY")
           tags
@@ -61,11 +62,7 @@ export const pageQuery = graphql`
               html
             }
           }
-location {
-            childMarkdownRemark {
               html
-            }
-          }
 
         }
       }

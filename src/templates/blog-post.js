@@ -21,7 +21,7 @@ class BlogPostTemplate extends React.Component {
           </div>
           <div className="wrapper">
             <h1 className="section-headline">{post.title}</h1>
-<h1>{location}</h1>
+            <h1>{post.location}</h1>
             <p
               style={{
                 display: 'block',
