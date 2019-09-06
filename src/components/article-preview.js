@@ -21,6 +21,6 @@ export default ({ article }) => (
         {tag}
       </p>
     ))}
-<small>{article.location}</small>
+<h1>{article.location}</h1>
   </div>
 )
