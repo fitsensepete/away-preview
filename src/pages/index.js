@@ -49,7 +49,6 @@ export const pageQuery = graphql`
         node {
           title
           slug
-    
           publishDate(formatString: "MMMM Do, YYYY")
           tags
           heroImage {
@@ -58,11 +57,6 @@ export const pageQuery = graphql`
             }
           }
           description {
-            childMarkdownRemark {
-              html
-            }
-          }
-location {
             childMarkdownRemark {
               html
             }
